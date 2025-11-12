@@ -66,6 +66,8 @@ helm delete my-release prometheus grafana
 
 
 <img width="1862" height="1073" alt="Screenshot from 2025-11-12 22-51-31" src="https://github.com/user-attachments/assets/270e72e7-28f9-44e1-a59e-eff524edb1dc" />
+<img width="1862" height="1073" alt="Screenshot from 2025-11-12 22-57-53" src="https://github.com/user-attachments/assets/42892342-a7c4-4720-bfb5-1ab63107a165" />
+
 <img width="1914" height="940" alt="Screenshot from 2025-11-12 22-01-32" src="https://github.com/user-attachments/assets/f23c916f-88fc-4a10-bcc0-2ba8391e369d" />
 <img width="1914" height="1074" alt="Screenshot from 2025-11-12 22-11-08" src="https://github.com/user-attachments/assets/77233656-5a36-482d-897d-9c3a8a5e9746" />
 <img width="1914" height="1074" alt="Screenshot from 2025-11-12 22-11-42" src="https://github.com/user-attachments/assets/553103b7-4214-4029-872a-7fa3f61b2ccb" />
