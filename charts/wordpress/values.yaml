@@ -1,0 +1,54 @@
+replicaCount: 2
+
+image:
+  wordpress:
+    repository: wordpress-custom
+    tag: latest
+    pullPolicy: IfNotPresent
+  mysql:
+    repository: mysql-custom
+    tag: latest
+    pullPolicy: IfNotPresent
+  nginx:
+    repository: nginx-openresty
+    tag: latest
+    pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+mysql:
+  rootPassword: "rootpassword"
+  database: "wordpress"
+  user: "wpuser"
+  password: "wppassword"
+
+persistence:
+  enabled: true
+  storageClass: "local-path"
+  accessMode: ReadWriteOnce
+  size: 10Gi
+
+resources:
+  wordpress:
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 250m
+      memory: 256Mi
+  mysql:
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 250m
+      memory: 256Mi
+  nginx:
+    limits:
+      cpu: 200m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 64Mi
